@@ -1,0 +1,45 @@
+{
+    // python
+    "python.analysis.extraPaths": [
+        "src",
+        "ext"
+    ],
+    "python.autoComplete.extraPaths": [
+        "src",
+        "ext"
+    ],
+    "python.linting.ignorePatterns": [
+        "**/site-packages/**/*.py",
+        ".vscode/*.py",
+        "reference/**/*.py",
+        "ext/**/*.py"
+    ],
+    "python.testing.pytestArgs": [
+        "src/test"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    // file
+    "files.exclude": {
+        "**/.git": true,
+        "**/.gitkeep": true,
+        "LICENSE": true,
+        "pylintrc": true,
+        "requirements*": true,
+        ".*": true
+    },
+    "files.watcherExclude": {
+    },
+    "search.exclude": {
+    },
+    "terminal.integrated.env.osx": {
+        "PATH": "${workspaceFolder}/.vscode/util:${env:PATH}",
+        "PYTHONPATH": "${workspaceFolder}/ext:${workspaceFolder}/src:${env:PYTHONPATH}",
+        "PRJPATH": "${workspaceFolder}",
+    },
+    "terminal.integrated.env.linux": {
+        "PATH": "${workspaceFolder}/.vscode/util:${env:PATH}",
+        "PYTHONPATH": "${workspaceFolder}/ext:${workspaceFolder}/src:${env:PYTHONPATH}",
+        "PRJPATH": "${workspaceFolder}",
+    }
+}
