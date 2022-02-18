@@ -1,0 +1,14 @@
+-r requirements.txt
+gpustat
+pipdeptree
+pip-licenses
+isort
+yapf
+pylint
+pytest
+pysnooper
+ipykernel
+matplotlib
+jupyter
+python-dotenv
+pre-commit
